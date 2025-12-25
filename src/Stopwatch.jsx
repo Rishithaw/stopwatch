@@ -1,10 +1,10 @@
-import React, {useState, useEffect, uesRef, use} from 'react';
+import React, {useState, useEffect, useRef} from 'react';
 
 function Stopwatch() {
   const [isRunning, setIsRunning] = useState(false);
   const [elapsedTime, setElapsedTime] = useState(0);
-  const intervalRef = uesRef(null);
-  const startTimeRef = uesRef(null);
+  const intervalRef = useRef(null);
+  const startTimeRef = useRef(null);
 
   useEffect(() => {
 
